@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.eot" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_scripts\controllerTemp.js" Target="ss_scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_scripts\ssApp.js" Target="ss_scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_scripts\ssController.js" Target="ss_scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_scripts\ssTable.js" Target="ss_scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_styles\ss_style.css" Target="ss_styles\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_styles\ss_style.css.map" Target="ss_styles\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_styles\ss_style.min.css" Target="ss_styles\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_styles\ss_style.scss" Target="ss_styles\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_scripts\ssTableHeadings.js" Target="ss_scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_scripts\ssConfigs.js" Target="ss_scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_scripts\ssTable2.js" Target="ss_scripts\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

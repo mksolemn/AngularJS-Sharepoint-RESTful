@@ -1,0 +1,10 @@
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite\ssSite\bin\Debug\ssSite.pdb
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite\ssSite\bin\Debug\ssSite.xml
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite\ssSite\obj\Debug\ssSite.dll
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite\ssSite\obj\Debug\ssSite.xml
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite\ssSite\obj\Debug\ssSite.pdb
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite BACKUP\ssSite\bin\Debug\ssSite.pdb
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite BACKUP\ssSite\bin\Debug\ssSite.xml
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite BACKUP\ssSite\obj\Debug\ssSite.dll
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite BACKUP\ssSite\obj\Debug\ssSite.xml
+C:\Users\mka\Documents\Visual Studio 2013\Projects\ssSite BACKUP\ssSite\obj\Debug\ssSite.pdb

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="fonts\glyphicons-halflings-regular.eot" Url="fonts/glyphicons-halflings-regular.eot" ReplaceContent="TRUE" />
+    <File Path="ss_scripts\controllerTemp.js" Url="ss_scripts/controllerTemp.js" ReplaceContent="TRUE" />
+    <File Path="ss_scripts\ssApp.js" Url="ss_scripts/ssApp.js" ReplaceContent="TRUE" />
+    <File Path="ss_scripts\ssController.js" Url="ss_scripts/ssController.js" ReplaceContent="TRUE" />
+    <File Path="ss_scripts\ssTable.js" Url="ss_scripts/ssTable.js" ReplaceContent="TRUE" />
+    <File Path="ss_styles\ss_style.css" Url="ss_styles/ss_style.css" ReplaceContent="TRUE" />
+    <File Path="ss_styles\ss_style.css.map" Url="ss_styles/ss_style.css.map" ReplaceContent="TRUE" />
+    <File Path="ss_styles\ss_style.min.css" Url="ss_styles/ss_style.min.css" ReplaceContent="TRUE" />
+    <File Path="ss_styles\ss_style.scss" Url="ss_styles/ss_style.scss" ReplaceContent="TRUE" />
+    <File Path="ss_scripts\ssTableHeadings.js" Url="ss_scripts/ssTableHeadings.js" ReplaceContent="TRUE" />
+    <File Path="ss_scripts\ssConfigs.js" Url="ss_scripts/ssConfigs.js" ReplaceContent="TRUE" />
+    <File Path="ss_scripts\ssTable2.js" Url="ss_scripts/ssTable2.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

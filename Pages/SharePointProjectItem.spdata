@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="ClientWebPart.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Default.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
+    <ProjectItemFile Source="ss_templates\ssTableTemplate.html" Target="Pages\ss_templates\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_templates\ssBlankTemplate.html" Target="Pages\ss_templates\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_templates\ssTableDirective.html" Target="Pages\ss_templates\" Type="ElementFile" />
+    <ProjectItemFile Source="ss_templates\ssDifferentTemplate.html" Target="Pages\ss_templates\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

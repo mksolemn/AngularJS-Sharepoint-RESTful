@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\ClientWebPart.aspx" Url="Pages/ClientWebPart.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\ss_templates\ssTableTemplate.html" Url="Pages/ss_templates/ssTableTemplate.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ss_templates\ssBlankTemplate.html" Url="Pages/ss_templates/ssBlankTemplate.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ss_templates\ssTableDirective.html" Url="Pages/ss_templates/ssTableDirective.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ss_templates\ssDifferentTemplate.html" Url="Pages/ss_templates/ssDifferentTemplate.html" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,106 @@
+var ssTableDirectives = angular.module('ssTableDirectives',[])
+    .directive('ssTableRender', function () {
+
+      var template = '<div class="ssTableRender"></div>',
+
+          link = function(scope, element, attrs) {
+              var headerCols = [],
+                  tableStart = '<table class="table table-bordered table-striped">',
+                  tableEnd = '</table>',
+                  table = '',
+                  visibleProps = [],
+                  sortCol = null,
+                  sortDir = 1;
+
+          scope.$watchCollection('datasource', render);
+
+          function render() {
+              if (scope.datasource && scope.datasource.length) {
+                  table += tableStart;
+                  table += renderHeader();
+                  table += renderRows() + tableEnd;
+                  renderTable();
+              }
+          }
+
+          function renderHeader() {
+               var tr = '<tr>';
+               for (var prop in scope.datasource[0]) {
+                   var val = getColumnName(prop);
+                   if (val) {
+                       //Track visible properties to make it fast to check them later
+                       visibleProps.push(prop);
+                       tr += '<th>' + val + '</th>';
+                   }
+               }
+               tr += '</tr>';
+               tr = '<thead>' + tr + '</thead>';
+               return tr;
+          }
+
+          function renderRows() {
+               var rows = '';
+               for (var i = 0, len = scope.datasource.length; i < len; i++) {
+                    rows += '<tr>';
+                    var row = scope.datasource[i];
+                    for (var prop in row) {
+                        if (visibleProps.indexOf(prop) > -1) {
+                            rows += '<td>' + row[prop] + '</td>';
+                        }
+                    }
+                    rows += '</tr>';
+               }
+               rows = '<tbody>' + rows + '</tbody>';
+               return rows;
+          }
+
+          function renderTable() {
+              table += '<br /><div class="rowCount">' + scope.datasource.length + ' rows</div>';
+              element.html(table);
+              table = '';
+          }
+
+          function getRawColumnName(friendlyCol) {
+              var rawCol;
+              scope.columnmap.forEach(function(colMap) {
+                  for (var prop in colMap) {
+                      if (colMap[prop] === friendlyCol) {
+                         rawCol = prop;
+                         break;
+                      }
+                  }
+                  return null;
+              });
+              return rawCol;
+          }
+
+          function filterColumnMap(prop) {
+              var val = scope.columnmap.filter(function(map) {
+                  if (map[prop]) {
+                      return true;
+                  }
+                  return false;
+              });
+              return val;
+          }
+
+          function getColumnName(prop) {
+              if (!scope.columnmap) return prop;
+              var val = filterColumnMap(prop);
+              if (val && val.length && !val[0].hidden) return val[0][prop];
+              else return null;
+          }
+
+          };
+
+      return {
+          restrict: 'E',
+          scope: {
+              columnmap: '=',
+              datasource: '='
+          },
+          link: link,
+          template: template
+      };
+
+});
